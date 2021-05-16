@@ -1,0 +1,20 @@
+
+\\ see the titled problem for the description
+
+function jumpingOnClouds(c) {
+    // Write your code here
+    let jumps = 0; 
+    let position = 0;
+    while (position < c.length -1){
+        console.log(position);
+        console.log(jumps);
+        if (c[position+2] == 0 ){
+            position = position + 2; 
+            jumps = jumps + 1;
+        } else {
+            position = position + 1;
+            jumps = jumps +  1;
+        }
+    }
+    return jumps;
+}
